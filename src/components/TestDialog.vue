@@ -140,7 +140,7 @@ export default class TestDialog extends Vue {
   top: -50% !important;
 }
 .dialog {
-  position: absolute;
+  position: fixed;
   bottom: 5%;
   right: 10%;
 }

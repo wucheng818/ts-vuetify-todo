@@ -4,7 +4,7 @@
       <v-layout row>
         <v-flex xs12 sm6 offset-sm3>
           <v-card>
-            <v-toolbar class="nav" color="black" dark height="40">
+            <v-toolbar class="nav" color="black" dark fixed height="40">
               <p>{{sum.all}}个任务，{{sum.completeNum}}个已完成</p>
               <!-- <p>10个任务，5个已完成</p> -->
             </v-toolbar>
@@ -71,7 +71,8 @@ export default class Todo extends Vue {
 }
 .body {
   height: 95%;
-  overflow: auto;
+  overflow: hidden;
+  margin-top: 40px;
 }
 .nodata {
   width: 100%;
