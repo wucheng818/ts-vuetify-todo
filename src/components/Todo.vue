@@ -11,6 +11,10 @@
         </v-card>
         <v-card class="body">
           <TodoList></TodoList>
+          <div v-show="sum.all===0">
+            <img class="nodata" src="@/assets/nodata.png">
+            <p>暂无数据</p>
+          </div>
         </v-card>
       </v-flex>
     </v-layout>
@@ -68,5 +72,9 @@ export default class Todo extends Vue {
 .body{
   height:95%;
   overflow: auto;
+}
+.nodata{
+  width: 100%;
+  padding: 10%;
 }
 </style>
