@@ -2,7 +2,7 @@
   <div>
     <v-dialog v-model="isAlert" persistent max-width="290">
       <v-card>
-        <v-card-title class="headline">温馨提示：</v-card-title>
+        <v-card-title class="headline">温馨提示:</v-card-title>
         <v-card-text>{{msg}}</v-card-text>
         <v-card-actions>
           <v-spacer></v-spacer>
